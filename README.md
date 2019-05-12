@@ -52,3 +52,7 @@ Liste du matériel nécessaire :
 -   1 routeur
 
 Utilisation de la topographie en étoile, car on se trouve dans un bâtiment avec un nombre de connexions limités. Par conséquent, il faut mettre le budget sur le switch central car il s'agit d'un point de défaillance important.
+
+Pour la mise en place de l'infrastructure sous GNS3 on à commencé par placer les éléments : " routeur, switchs, PC, imprimante et la NAT ". Pour les PC et les imprimantes on utilise des VPCS car plus facile à configurer et ne consommant pas trop de RAM au lancement. On cable tout et on configure les IP des PC et des imprimantes. On verifie que tout fonctionne en faisant des ping entre PC. Ensuite on configure la NAT ainsi que le routeur. Et on teste en essayant de ping google (8.8.8.8). Au final on finit par configurer les VLAN.
+
+Problématique : Lors de la mise en place de la topographie nous voulions faire une topographie linéaire avec une suite de switch reliés entre eux, mais cette topographique était trop fragile et nous avons préféré la topographie dite en étoile. Cependant même avec cette  topographie cela restait fragile car si le switch du milieu tombe l'infrastructure s'écroule.
