@@ -43,7 +43,7 @@
 | imprimante4| `10.4.0.33` |   20 |
 | imprimante5| `10.4.0.34` |   20 |
 
-Liste du matériel nécessaire :
+## Liste du matériel nécessaire :
 
 -   5 serveurs
 -   5 imprimantes
@@ -52,7 +52,7 @@ Liste du matériel nécessaire :
 -   36 câbles
 -   1 routeur
 
-##Devis : 
+## Devis : 
 
 - 1 routeeur c3640 pour 150€ (d'après Amazon)
 - 36 câble pour 60€ (bas de gamme)
