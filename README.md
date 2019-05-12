@@ -51,4 +51,4 @@ Liste du matériel nécessaire :
 -   36 câbles
 -   1 routeur
 
-Il faut mettre le budget sur les switchs (au moins le switch central).
+Utilisation de la topographie en étoile, car on se trouve dans un bâtiment avec un nombre de connexions limités. Par conséquent, il faut mettre le budget sur le switch central car il s'agit d'un point de défaillance important.
