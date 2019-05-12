@@ -1,5 +1,6 @@
-﻿
-Tableau d'adressage
+# TP4 - Infrastructure Small/mMedium office 
+
+## Tableau d'adressage
 
 |            | 10.4.0.0/24 | vlan |
 | ---------- | ----------- | ---- |
@@ -51,8 +52,19 @@ Liste du matériel nécessaire :
 -   36 câbles
 -   1 routeur
 
-Utilisation de la topographie en étoile, car on se trouve dans un bâtiment avec un nombre de connexions limités. Par conséquent, il faut mettre le budget sur le switch central car il s'agit d'un point de défaillance important.
+##Devis : 
 
-Pour la mise en place de l'infrastructure sous GNS3 on à commencé par placer les éléments : " routeur, switchs, PC, imprimante et la NAT ". Pour les PC et les imprimantes on utilise des VPCS car plus facile à configurer et ne consommant pas trop de RAM au lancement. On cable tout et on configure les IP des PC et des imprimantes. On verifie que tout fonctionne en faisant des ping entre PC. Ensuite on configure la NAT ainsi que le routeur. Et on teste en essayant de ping google (8.8.8.8). Au final on finit par configurer les VLAN.
+- 1 routeeur c3640 pour 150€ (d'après Amazon)
+- 36 câble pour 60€ (bas de gamme)
+- 24 PC pour 12000€ (bas de gamme)
+- 5 imprimantes pour 5000€ (bas de gamme, grosses imprimantes d'entreprise)
+- 5 serveurs pour 2600€ (entrée de gamme)
+- 6 switchs pour 540€ (bas de gamme, il est conseillé d'au moins prendre un meilleeur switch pour le switch central)
 
-Problématique : Lors de la mise en place de la topographie nous voulions faire une topographie linéaire avec une suite de switch reliés entre eux, mais cette topographique était trop fragile et nous avons préféré la topographie dite en étoile. Cependant même avec cette  topographie cela restait fragile car si le switch du milieu tombe l'infrastructure s'écroule.
+Ce qui fait une estimation de 20 350€ pour du matériel bas de gamme. Pour une infrastructure plus résistante nous vous conseillons d'investir plus (notemment sur les câbles et les switchs).
+
+## Mise en place de l'environnement de travail
+
+Pour la mise en place de l'infrastructure sous GNS3 on a commencé par placer les éléments : " routeur, switchs, PC, imprimantes et la NAT ". Pour les PC et les imprimantes on utilise des VPCS car plus facile à configurer et ne consommant pas trop de RAM au lancement. On câble tout et on configure les IP des PC et des imprimantes. On verifie que tout fonctionne en faisant des ping entre PC. Ensuite on configure la NAT ainsi que le routeur. Et on teste en essayant de ping google (8.8.8.8). Au final on finit par configurer les VLAN.
+
+Problématique : Lors de la mise en place de la topographie nous voulions faire une topographie linéaire avec une suite de switchs reliés entre eux, mais cette topographie était trop fragile et nous avons préféré la topographie dite en étoile. Cependant, même avec cette topographie cela restait fragile car si le switch du milieu tombe l'infrastructure s'écroule.
